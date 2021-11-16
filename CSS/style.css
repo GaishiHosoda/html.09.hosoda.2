@@ -1074,6 +1074,17 @@ text-align: center;
                 opacity: 1;
                 transform: scale3d(1,1,1);
             }
+
+
+
+/* Twitter */
+.twitter{
+    width:500px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* footer--------------------------------------------------------- */
 
 .footer{
