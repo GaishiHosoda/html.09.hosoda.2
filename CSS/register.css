@@ -16,11 +16,6 @@ body{
     font-size: 1.6rem;
 }
 
-a{
-    text-decoration: none;
-    color: #202020;
-}
-
 .icon{
     height:60px;
 }
@@ -40,7 +35,7 @@ p{ line-height: 175%;}
 }
 
 .title{
-    background-image: url(/img/top_oilpainting.jpeg);
+    background-image: url(/img/autumn\ oaks.jpeg);
     background-size:cover;
     height: 400px;
     background-repeat:no-repeat;
@@ -65,7 +60,7 @@ p{ line-height: 175%;}
 
   .title p {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
@@ -75,6 +70,7 @@ p{ line-height: 175%;}
     font-size: 16px;
     font-weight: 700;
     color: white;
+    mix-blend-mode: difference;
     }
   
 
@@ -343,7 +339,7 @@ p{ line-height: 175%;}
     margin-right: auto;
     width: 900px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .applyimg{
@@ -1048,7 +1044,7 @@ text-align: center;
                 width: 16px;
             }
             .radio03::after {
-                background: #EC691E;
+                background: #fedd1e;
                 border-radius: 50%;
                 content: '';
                 display: block;
