@@ -5,14 +5,18 @@ html{
   
 }
 
+a{
+    text-decoration: none;
+    color: #202020;
+}
+
 img{
     max-width: 100%;
     height: auto;
 }
 
-a{
-    text-decoration: none;
-    color: #202020;
+.armarker{
+    text-align: center;
 }
 
 body{
@@ -20,8 +24,6 @@ body{
     font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
     font-size: 1.6rem;
 }
-
-
 
 .icon{
     height:60px;
@@ -42,7 +44,7 @@ p{ line-height: 175%;}
 }
 
 .title{
-    background-image: url(/img/autumn\ oaks.jpeg);
+    background-image: url(/img/cover3.jpg);
     background-size:cover;
     height: 400px;
     background-repeat:no-repeat;

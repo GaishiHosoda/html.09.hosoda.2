@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tile art</title>
+    <link rel="stylesheet" href="css/artop.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/register.css">
     <link rel="shortcut icon" href="favicon.ico">
 
 </head>
@@ -51,8 +51,8 @@
     <!-- ここはメイン画像 -->
     <div class=shashin>
         <div class="title">
-        <h1>展示まであとすこしです</h1>
-        <p>作品を登録しましょう</p>
+        <h1>展示シミュレーション</h1>
+        <p>ARを使って展示した様子をイメージしましょう</p>
         </div>
         </div>
         
@@ -62,80 +62,27 @@
     <!-- ここはabout-->
 
     <div id="about" class="container">
-        <h2 class="section-title">Listing form</h2>
+        <h2 class="section-title">AR Simulation</h2>
         <!-- <div class="section-image"><img src="images/about/profile.png" alt=""></div> -->
 
-        <p class="section-name">出品フォーム</p>
+        <p class="section-name">ARシミュレーション</p>
         <div class="midashi"> </div>
+        <p style="text-align: center;">ARシミュレーターで以下のマーカーを読み込むと、実寸で絵を体感できます</p>
     </div>
     
 <!-- ここから登録フォーム -->
 <section id="contact" class="contact">
-
-    <div class="form-wrapper">
-        <form action="">
-            <dl class="form-inner">
-            
-                <dt class="form-title">メールアドレス</dt>
-                <dd class="form-item3"><input type="email" name="email" class="form-parts"></dd>
-
-                            
-                <dt class="form-title">パスワード</dt>
-                <dd class="form-item3"><input type="password" name="password" class="form-parts"></dd>
-
-
-                <dt class="form-title">名前</dt>
-                <dd class="form-item"><input type="text" name="name" class="form-parts"></dd>
-
-                <dt class="form-title">生年月日</dt>
-                <dd class="form-item"><input type="date" name="name" class="form-parts"></dd>
-
-                <dt class="form-title">所属</dt>
-                <dd class="form-item"><input type="text" name="name" class="form-parts"></dd>
-
-                <dt class="form-title">メールアドレス</dt>
-                <dd class="form-item3"><input type="email" name="email" class="form-parts"></dd>
-
-                <dt class="form-title">作品名</dt>
-                <dd class="form-item3"><input type="text" name="name" class="form-parts"></dd>
-
-                <dt class="form-title">作品の詳細説明(140字~200字程度)</dt>
-                <dd class="form-item"><textarea name="detail" id="" cols="30" rows="10" class="form-parts"></textarea></dd>
-
-                <dt class="form-title check-radio"> 作品種別</dt>
-                <dd class="form-item">
-                    <ul class="form-ul">
-                        <li><input type="radio" id="03-A" name="radio03"><label for="03-A" class="radio03">油絵</label></li>
-                        <li><input type="radio" id="03-B" name="radio03"><label for="03-B" class="radio03">版画・水彩画</label></li>
-                        <li><input type="radio" id="03-C" name="radio03"><label for="03-C" class="radio03">彫刻・立体作品</label></li>
-                        <li><input type="radio" id="03-D" name="radio03"><label for="03-D" class="radio03">その他</label></li>
-                    </ul>
-                </dd class="form-item">
-
-                <dt class="form-title">作品イメージ(jpg/pngファイル)</dt>
-                <dd class="form-item3"><input type="file" name="name" class="form-parts"></dd>
-
-          </dl>
-
-            <input type="submit" value="送信" class="btn btn-submit">
-
-        </form>
+    
+    <div class="armarker">
+    <img src="./img/pattern-icon_art.png" alt="ARマーカー">
+    </div>
+    <a href="./ar.html" target=”_blank”><input type="submit" value="ARを起動(別タブ)" class="btn btn-submit"></a>
+    <p style="text-align: center;">推奨環境：スマートフォン(iPhone/Android)</p>
+ 
 
     </div>
 </section>
 <!-- ここまで登録フォーム -->
-
-<!-- ここからイメージ -->
-  
-    <section id="cource" class="cource">
-    <div id="cource" class="container">
-        <h2 class="section-title" id="cource">image</h2>
-
-        <p class="section-name">展示イメージ</p>
-        <div class="midashi"> </div>
-    </div>
-
-<!-- ここまでTechnology -->
 
     <!-- ここからフッター -->
     <footer class="footer text-center">
