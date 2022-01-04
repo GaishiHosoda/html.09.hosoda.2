@@ -40,7 +40,7 @@ p{ line-height: 175%;}
 }
 
 .title{
-    background-image: url(/img/top_oilpainting.jpeg);
+    background-image: url(https://gaishihoso.sakura.ne.jp/2022_jscontest/img/top_oilpainting.jpeg);
     background-size:cover;
     height: 400px;
     background-repeat:no-repeat;
@@ -179,7 +179,7 @@ p{ line-height: 175%;}
 .section-text{
     text-align: left;
     margin-bottom: 40px;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight:700;
     line-height:39px;
 }

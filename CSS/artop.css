@@ -43,8 +43,12 @@ p{ line-height: 175%;}
 
 }
 
+.space{
+    height: 60px;
+}
+
 .title{
-    background-image: url(/img/cover3.jpg);
+    background-image: url(https://gaishihoso.sakura.ne.jp/2022_jscontest/img/cover3.jpg);
     background-size:cover;
     height: 400px;
     background-repeat:no-repeat;
