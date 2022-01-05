@@ -36,11 +36,11 @@
 
             <div class="navigation-container">
                 <ul class="navigation">
-                <li class="nav-item"><a href="#about">Location</a> </li>
-                <li class="nav-item"><a href="#cource">Community</a></li>
-                <li class="nav-item"><a href="#news">Membership</a></li>
-                <li class="nav-item"><a href="#access">Contact</a></li>
-                <li class="nav-item"><a href="#contact">Log in</a></li>
+                <li class="nav-item"><a href="./index.html#about">About</a> </li>
+                <li class="nav-item"><a href="./index.html#service">Service</a></li>
+                <li class="nav-item"><a href="./index.html#space">Space</a></li>
+                <li class="nav-item"><a href="./index.html#listing">Listing</a></li>
+                <li class="nav-item"><a href="./index.html#Spaceowner">Space Owner</a></li>
                 </ul>
             </div>
         </div>
@@ -85,22 +85,22 @@
 
 
                 <dt class="form-title">名前</dt>
-                <dd class="form-item"><input type="text" name="name" class="form-parts"></dd>
+                <dd class="form-item"><input id="name" type="text" name="name" class="form-parts"></dd>
 
                 <dt class="form-title">生年月日</dt>
-                <dd class="form-item"><input type="date" name="name" class="form-parts"></dd>
+                <dd class="form-item"><input id="birth" type="date" name="birth" class="form-parts"></dd>
 
                 <dt class="form-title">所属</dt>
-                <dd class="form-item"><input type="text" name="name" class="form-parts"></dd>
+                <dd class="form-item"><input id="company" type="text" name="company" class="form-parts"></dd>
 
                 <dt class="form-title">メールアドレス</dt>
-                <dd class="form-item3"><input type="email" name="email" class="form-parts"></dd>
+                <dd class="form-item3"><input id="email" type="email" name="email" class="form-parts"></dd>
 
                 <dt class="form-title">作品名</dt>
-                <dd class="form-item3"><input type="text" name="name" class="form-parts"></dd>
+                <dd class="form-item3"><input id="title" type="text" name="title" class="form-parts"></dd>
 
                 <dt class="form-title">作品の詳細説明(140字~200字程度)</dt>
-                <dd class="form-item"><textarea name="detail" id="" cols="30" rows="10" class="form-parts"></textarea></dd>
+                <dd class="form-item"><input id="description" name="detail" id="description" cols="30" rows="10" class="form-parts"></input></dd>
 
                 <dt class="form-title check-radio"> 作品種別</dt>
                 <dd class="form-item">
@@ -113,13 +113,12 @@
                 </dd class="form-item">
 
                 <dt class="form-title">作品イメージ(jpg/pngファイル)</dt>
-                <dd class="form-item3"><input type="file" name="name" class="form-parts"></dd>
-
+                <dd class="form-item3"><input type="file" name="file" class="form-parts"></dd>
           </dl>
-
-            <input type="submit" value="送信" class="btn btn-submit">
-
-        </form>
+            
+            <div class="buttondiv">
+            <button><input type="submit" value="プレビューを作成" class="btn btn-submit"></button>
+            </form>
 
     </div>
 </section>
@@ -137,8 +136,10 @@
 
     <div class="ipad">
         <img src="./img/ipadimage.png" alt="ipadimage">
-        </div>
 
+    </div>
+    <div> <p id="output-message">  </p></div>
+   
 <!-- ここまでTechnology -->
 
     <!-- ここからフッター -->
@@ -197,32 +198,22 @@
             });
 </script>
         
-
-    
-        
-<script type="text/javascript">
-        // Initialize jRumble on Selector
-        $('#eyecatch1').jrumble({
-	    speed: 200
-        });
-
-        // Start rumble on element
-        $('#eyecatch1').trigger('startRumble');
-
-        // Stop rumble on element
-        $('#eyecathc1').trigger('stopRumble');
-
-        
-
-        // $('#eyecatch1').hover(function(){
-	    //     $(this).trigger('startRumble');
-        //     }, function(){
-	    //     $(this).trigger('stopRumble');
-        // });
-					
-        
+<!-- イメージ画面作成 -->
+<script>
+    $('button').click(function() {
+      const textbox = $("#name").val();
+      console.log(textbox);
+      const inputValue = textbox;
+      //テキストボックスの値を使って、出力するメッセージを生成する
+      const output = "入力された内容は「" + inputValue + "」です。";
+      console.log(output);
+      //出力用のp要素にメッセージを表示
+      document.getElementById("output-message") = output;
+      $("#output-message").html(output);
+    });
 </script>
 
+<!-- イメージ画面作成=ここまで -->
 
     
 </body>
