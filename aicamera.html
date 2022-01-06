@@ -57,12 +57,14 @@
 
     <div class="monitor">
     
-    <canvas id="mycanvas" width="480" height="320"></canvas>
-    <video id="myvideo" width="480" height="320"></video>
+      <button id="stop">手の認識を停止</button><br />
+
+      <canvas id="mycanvas" width="480" height="320"></canvas>
+      <video id="myvideo" width="480" height="320"></video>
     </div>
     
-    <!-- リアルタイム検出を停止するためのボタン -->
-    <button class="btn" id="stop">トライアルを停止</button><br />
+    <!-- 切り替えボタン -->
+    <a href="face.html"><button class="btn" >顔認識に切替える</button><br /></a>
 
     <script src="https://cdn.jsdelivr.net/npm/handtrackjs@0.0.13/dist/handtrack.min.js"></script>
     <script>
@@ -76,15 +78,13 @@
         scoreThreshold: 0.65 // 予測信頼度のしきい値
       };
 
-      
-
       let state = true;
       let model;  // 繰り返し利用するために読み込んだ機械学習モデルを格納しておく
 
       document.getElementById("stop").addEventListener("click", stopEvent);
 
       ctx.font = "18pt Arial";
-      ctx.fillText("AIカメラ読込中...", 50, 50);
+      ctx.fillText("AIカメラを読込中...", 50, 50);
 
       
       handTrack.load(options).then(function(model_data) {
