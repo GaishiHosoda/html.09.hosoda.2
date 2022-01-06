@@ -85,7 +85,7 @@
 
 
                 <dt class="form-title">名前</dt>
-                <dd class="form-item"><input id="name" type="text" name="name" class="form-parts"></dd>
+                <dd class="form-item"><input id="input-message" type="text" name="name" class="form-parts"></dd>
 
                 <dt class="form-title">生年月日</dt>
                 <dd class="form-item"><input id="birth" type="date" name="birth" class="form-parts"></dd>
@@ -117,7 +117,7 @@
           </dl>
             
             <div class="buttondiv">
-            <button><input type="submit" value="プレビューを作成" class="btn btn-submit"></button>
+            <button><input type="submit" onclick="showMessage()" value="プレビューを作成" class="btn btn-submit"></button>
             </form>
 
     </div>
@@ -200,17 +200,15 @@
         
 <!-- イメージ画面作成 -->
 <script>
-    $('button').click(function() {
-      const textbox = $("#name").val();
-      console.log(textbox);
-      const inputValue = textbox;
+ const showMessage = () => {
+      const textbox = document.getElementById("input-message");
+      const inputValue = textbox.value;
+
       //テキストボックスの値を使って、出力するメッセージを生成する
       const output = "入力された内容は「" + inputValue + "」です。";
-      console.log(output);
       //出力用のp要素にメッセージを表示
-      document.getElementById("output-message") = output;
-      $("#output-message").html(output);
-    });
+      document.getElementById("output-message").innerHTML = output;
+    }
 </script>
 
 <!-- イメージ画面作成=ここまで -->
