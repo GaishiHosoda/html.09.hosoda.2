@@ -332,6 +332,7 @@ p{ line-height: 175%;}
     opacity: 0.6;
   }
 
+
 /* Apply */
 .apply{
     background-color: #fafafa;
@@ -465,7 +466,7 @@ input[type*=radio]:checked{
     border:none; 
     width: 298px;
     height: 54px;
-    font-size: 1.8rem;
+    font-size: 12px;
     padding: 0px;
     margin-bottom:0px;
     
@@ -989,11 +990,9 @@ text-align: center;
     border:none; 
     width: 298px;
     height: 54px;
-    font-size: 1.8rem;
+    font-size: 16px;
     padding: 0px;
     margin-bottom:0px;
-    
-    
 }
 
 .con1{
